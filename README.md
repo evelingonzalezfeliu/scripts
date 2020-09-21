@@ -2,7 +2,7 @@
 
 A partir de archivos VCFs del proyecto DAMASCO, se realizó la anotación de variante con ANNOVAR y CGI, para todas las muestras.
 
-Para la anotación con ANNOVAR se utilizaron las sguientes bases de datos.
+Para la anotación con ANNOVAR se utilizaron las siguientes bases de datos.
 - refGene
 - gnomad211_genome 
 - gnomad211_exome
@@ -16,9 +16,9 @@ Para la anotación con ANNOVAR se utilizaron las sguientes bases de datos.
 - cosmic92
 - clinvar_20200316
 
-Para mas información y descripción de las bases de datos visitar el siguiente [link](https://annovar.openbioinformatics.org/en/latest/user-guide/filter/)
+Para mas información y descripción de las bases de datos visitar el siguiente [link](https://annovar.openbioinformatics.org/en/latest/user-guide/filter/)<br>
 
-Reference
+Reference<br>
 Wang K, Li M, Hakonarson H. ANNOVAR: Functional annotation of genetic variants from next-generation sequencing data Nucleic Acids Research, 38:e164, 2010
 
 ## 1. Filtro inical de variantes.
