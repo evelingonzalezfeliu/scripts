@@ -62,7 +62,9 @@ Columnas en Excel<br>
  motivo: "avsnp150_AND_ExAC_nontcga_ALL"<br>
 
 - **2.6: Variantes no clasificadas y con rsID en avsnp150,son clasificadas como posible somatica**<br>
+Aquellas variantes no clasificadas, que ademas tiene un rsID en la columna ***avsnp150*** es clasificada como posible somática. Esto debido a que es una variante que ya ha sido reportada, sin embargo, no hay indicios que sea germinal, ya que no se ha clasificado en los pasos anteriores.
 
+Ojo: Existe la posibilidad que algunas de estas variantes, sean germinales. Debido a la baja representación de las poblaciones latinas en bases de  datos poblacionales. En caso de tener dudas, se puede realizar una revision manual del rsID en la página de dbSNP y/o en CLINVAR. 
 Columnas en Excel<br>
 clasificación: "Posible_Somatica"<br>
 motivo: "avsnp150"<br>
@@ -74,6 +76,8 @@ clasificación: "Posible_Somatica" <br>
 motivo: "sin_rsID_con_AFpob_menor_0.01" <br>
 
 - **2.8: Variantes que aun no son clasificadas, son etiquetadas como posibles variantes somáticas novel.**<br>
+Aquellas variantes que no ha sido etiquetada en los pasos anteriores, es clasificada como posible variante somática novel. Debido a que no hay información de la variante en las bases de datos revisadas y tiene VAF mayor o igual a 0.6.
+
 Columnas en Excel<br>
 clasificación: "Posible_Somatica_Novel"<br>
 motivo: "Sin_info_BDs"<br>
