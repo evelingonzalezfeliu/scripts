@@ -1,6 +1,6 @@
 # Filtro y clasificación de variantes [Datos Damasco]
 
-A partir de archivos VCFs, se realizó de variantes con ANNOVAR y CGI. 
+A partir de archivos VCFs del proyecto DAMASCO, se realizó la anotación de variante con ANNOVAR y CGI, para todas las muestras.
 
 Para la anotación con ANNOVAR se utilizaron las sguientes bases de datos.
 - refGene
@@ -75,8 +75,7 @@ clasificación: "Posible_Somatica" <br>
 motivo: "sin_rsID_con_AFpob_menor_0.01" <br>
 
 - **2.8: Variantes que aun no son clasificadas, son etiquetadas como posibles variantes somáticas novel.**<br>
-Aquellas variantes que no ha sido etiquetada en los pasos anteriores, es clasificada como posible variante somática novel. Debido a que no hay información de la variante en las bases de datos revisadas y tiene VAF mayor o igual a 0.6.
-
+Aquellas variantes que no ha sido etiquetada en los pasos anteriores, es clasificada como posible variante somática novel. Debido a que no hay información de la variante en las bases de datos revisadas y tiene VAF mayor o igual a 0.6.<br>
 Columnas en Excel<br>
 clasificación: "Posible_Somatica_Novel"<br>
 motivo: "Sin_info_BDs"<br>
