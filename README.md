@@ -28,12 +28,20 @@ A partir de la uníon de todas las variantes por set de datos en Damasco, se eli
 
 ## 2. Clasificación de variantes
 
+- **2.1: Variantes encontradas en muestras de BC son clasificadas como variantes germinal  
+Aquellas variantes que fueron encontradas en las muestras de sangre (BC), secuenciadas por el panel de TumorSec, son etiquetadas como variantes germinales si han sido encontradas en las muestras tumorales.
+Columnas en Excel<br>
+clasificacion: "Germinal"<br>
+motivo:"variante_en_BC"<br>
+
 - **2.2 Variantes con VAF mayor 0.60, son clasificadas como germinal.**<br>
+Aquellas variantes con un número mayor a 0.6 en la columna ***VA*** del archivo Excel, son etiquetadas como germinal.
 Columnas en Excel<br>
 clasificacion: "Germinal"<br>
 motivo: "VAF_sobre_0.6"<br>
 
-- **2.3: Variantes no clasificadas y con Cosmic ID. Somática.**<br>
+- **2.3: Variantes no clasificadas y con Cosmic ID, son clasificadas como Somática.**<br>
+Aquellas variantes con un ID en la columna ***cosmic92*** son aquellas variantes que ya han sido reportadas al menos una vez como variantes somáticas en la base de datos COSMIC [link](https://cancer.sanger.ac.uk/cosmic)
 Columnas en Excel<br>
 clasificación: "Somatica"<br>
 motivo: "CosmicID"<br>
