@@ -4,24 +4,27 @@ A partir de archivos VCFs, se realizó de variantes con ANNOVAR y CGI.
 
 Para la anotación con ANNOVAR se utilizaron las sguientes bases de datos.
 - refGene
-- gnomad211_genome
+- gnomad211_genome 
 - gnomad211_exome
 - esp6500siv2_all
--exac03nontcga
--snp138NonFlagged
--1000Genomas (2015)
--dbnsfp35c
--cadd13
--avsnp150
--cosmic92
--clinvar_20200316
+- exac03nontcga
+- snp138NonFlagged
+- 1000Genomas (2015)
+- dbnsfp35c
+- cadd13
+- avsnp150
+- cosmic92
+- clinvar_20200316
 
-Para mas información y descripción de las bases de datos visitar el siguiente [link]:(https://annovar.openbioinformatics.org/en/latest/user-guide/filter/)
+Para mas información y descripción de las bases de datos visitar el siguiente [link](https://annovar.openbioinformatics.org/en/latest/user-guide/filter/)
 
 Reference
 Wang K, Li M, Hakonarson H. ANNOVAR: Functional annotation of genetic variants from next-generation sequencing data Nucleic Acids Research, 38:e164, 2010
 
-## 1. Filtro de variantes.
+## 1. Filtro inical de variantes.
+
+A partir de la uníon de todas las variantes por set de datos en Damasco, se eliminaron variantes basados en los siguientes criterios: 
+*Solo variantes tipo SNP con VAF (frecuecia alélica de la variante) mayor o igual a 0.05 (5%) y para InDels, se convervaron variantes con VAF mayor o igual a 0.07(7%). Estos filtros basados en los limites de deteccion validados por el panel OCA (Oncomine Focus Assay | Thermo Fisher Scientific). Para mayor información del panel [link](https://docs.google.com/presentation/d/1RMWfWdQEMmEO8QXOeL9V23UQObzv1bLDHuzy44ZFx88/edit?usp=sharing)
 
 ## 2. Clasificación de variantes
 
