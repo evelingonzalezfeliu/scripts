@@ -43,7 +43,8 @@ clasificación: "Germinal"<br>
 motivo: "VAF_sobre_0.6"<br>
 
 - **2.3: Variantes no clasificadas y con Cosmic ID, son clasificadas como Somática.**<br>
-Aquellas variantes con un ID en la columna ***cosmic92*** son aquellas variantes que ya han sido reportadas al menos una vez como variantes somáticas en la base de datos COSMIC [link](https://cancer.sanger.ac.uk/cosmic)
+Aquellas variantes con un ID en la columna ***cosmic92*** son aquellas variantes que ya han sido reportadas al menos una vez como variantes somáticas en la base de datos COSMIC [link](https://cancer.sanger.ac.uk/cosmic)<br>
+
 Columnas en Excel<br>
 clasificación: "Somatica"<br>
 motivo: "CosmicID"<br>
