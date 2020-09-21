@@ -3,11 +3,10 @@
 A partir de archivos VCFs, se realizó de variantes con ANNOVAR y CGI. 
 
 Para la anotación con ANNOVAR se utilizaron las sguientes bases de datos.
-
--refGene
--gnomad211_genome
--gnomad211_exome
--esp6500siv2_all
+- refGene
+- gnomad211_genome
+- gnomad211_exome
+- esp6500siv2_all
 -exac03nontcga
 -snp138NonFlagged
 -1000Genomas (2015)
