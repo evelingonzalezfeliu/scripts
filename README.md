@@ -31,13 +31,13 @@ A partir de la uníon de todas las variantes por set de datos en Damasco, se eli
 - **2.1: Variantes encontradas en muestras de BC son clasificadas como variantes germinal**  
 Aquellas variantes que fueron encontradas en las muestras de sangre (BC), secuenciadas por el panel de TumorSec, son etiquetadas como variantes germinales si han sido encontradas en las muestras tumorales.
 Columnas en Excel<br>
-clasificacion: "Germinal"<br>
+clasificación: "Germinal"<br>
 motivo:"variante_en_BC"<br>
 
 - **2.2 Variantes con VAF mayor 0.60, son clasificadas como germinal.**<br>
 Aquellas variantes con un número mayor a 0.6 en la columna ***VAF*** del archivo Excel, son etiquetadas como germinal.
 Columnas en Excel<br>
-clasificacion: "Germinal"<br>
+clasificación: "Germinal"<br>
 motivo: "VAF_sobre_0.6"<br>
 
 - **2.3: Variantes no clasificadas y con Cosmic ID, son clasificadas como Somática.**<br>
@@ -54,19 +54,20 @@ clasificación:"Germinal"<br>
 motivo:"snp138NonFlagged"<br>
 
 - **2.5: Variantes no clasificadas y con ID en avsnp150 y con AF en ExAC_nontcga_ALL es clasificada como variantes germina**l<br>
-
+Aquellas variantes que no fueron clasificadas en los pasos anteriores, que presentan rsID en la columna ***avsnp150*** y AF reportada en la columna ***ExAC_nontcga_ALL*** , son clasificadas como varinates germinal. Esto quiere decir, que es una variante conocida que ha sido sido encontrada a bajas frecuencias alélicas en exomas de muestras de sangre (donde se excluyen las muestras con cancer (TCGA))
 Columnas en Excel<br>
-clasificacion: "Germinal"<br>
+clasificación: "Germinal"<br>
 motivo: "avsnp150_AND_ExAC_nontcga_ALL"<br>
 
-- **2.6: Variantes no clasificadas y con ID en avsnp150, es clasificada como posible somatica**<br>
+- **2.6: Variantes no clasificadas y con rsID en avsnp150, es clasificada como posible somatica**<br>
+
 Columnas en Excel<br>
-clasificacion: "Posible_Somatica"<br>
+clasificación: "Posible_Somatica"<br>
 motivo: "avsnp150"<br>
 
 - **2.7: Variantes con AF muy bajas en Bases de datos de frecuencias alélicas poblacionales, menor < 0.01, son clasificadas como posibles somáticas.**<br>
 Columnas en Excel<br>
-clasificacion: "Posible_Somatica" <br>
+clasificación: "Posible_Somatica" <br>
 motivo: "sin_rsID_con_AFpob_menor_0.01" <br>
 
 - **2.8: Aquellas variantes sin informacion en Bases de datos, son clasificadas como posibles variantes somáticas novel.**<br>
