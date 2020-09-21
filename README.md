@@ -55,15 +55,14 @@ Columnas en Excel<br>
 clasificación:"Germinal"<br>
 motivo:"snp138NonFlagged"<br>
 
-- **2.5: Variantes no clasificadas y con ID en avsnp150 y con AF en ExAC_nontcga_ALL es clasificada como variantes germina**l<br>
+- **2.5: Variantes no clasificadas y con ID en avsnp150 y con AF en ExAC_nontcga_ALL es clasificada como variantes germina**<br>
 Aquellas variantes que no fueron clasificadas en los pasos anteriores, que presentan rsID en la columna ***avsnp150*** y AF reportada en la columna ***ExAC_nontcga_ALL*** , son clasificadas como varinates germinal. Esto quiere decir, que es una variante conocida que ha sido sido encontrada a bajas frecuencias alélicas en exomas de muestras de sangre (donde se excluyen las muestras con cancer (TCGA))
 Columnas en Excel<br>
  clasificación: "Germinal"<br>
  motivo: "avsnp150_AND_ExAC_nontcga_ALL"<br>
 
-- **2.6: Variantes no clasificadas y con rsID en avsnp150,son clasificadas como posible somatica**<br>
-Aquellas variantes no clasificadas, que ademas tiene un rsID en la columna ***avsnp150*** es clasificada como posible somática. Esto debido a que es una variante que ya ha sido reportada, sin embargo, no hay indicios que sea germinal, ya que no se ha clasificado en los pasos anteriores.
-
+- **2.6: Variantes no clasificadas y con rsID en avsnp150,son clasificadas como posible somatica** <br>
+Aquellas variantes no clasificadas, que ademas tiene un rsID en la columna ***avsnp150*** es clasificada como posible somática. Esto debido a que es una variante que ya ha sido reportada, sin embargo, no hay indicios que sea germinal, ya que no se ha clasificado en los pasos anteriores.<br>
 Ojo: Existe la posibilidad que algunas de estas variantes, sean germinales. Debido a la baja representación de las poblaciones latinas en bases de  datos poblacionales. En caso de tener dudas, se puede realizar una revision manual del rsID en la página de dbSNP y/o en CLINVAR. 
 Columnas en Excel<br>
 clasificación: "Posible_Somatica"<br>
