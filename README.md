@@ -28,14 +28,14 @@ A partir de la uníon de todas las variantes por set de datos en Damasco, se eli
 
 ## 2. Clasificación de variantes
 
-- **2.1: Variantes encontradas en muestras de BC son clasificadas como variantes germinal  
+- **2.1: Variantes encontradas en muestras de BC son clasificadas como variantes germinal**  
 Aquellas variantes que fueron encontradas en las muestras de sangre (BC), secuenciadas por el panel de TumorSec, son etiquetadas como variantes germinales si han sido encontradas en las muestras tumorales.
 Columnas en Excel<br>
 clasificacion: "Germinal"<br>
 motivo:"variante_en_BC"<br>
 
 - **2.2 Variantes con VAF mayor 0.60, son clasificadas como germinal.**<br>
-Aquellas variantes con un número mayor a 0.6 en la columna ***VA*** del archivo Excel, son etiquetadas como germinal.
+Aquellas variantes con un número mayor a 0.6 en la columna ***VAF*** del archivo Excel, son etiquetadas como germinal.
 Columnas en Excel<br>
 clasificacion: "Germinal"<br>
 motivo: "VAF_sobre_0.6"<br>
@@ -47,13 +47,14 @@ clasificación: "Somatica"<br>
 motivo: "CosmicID"<br>
 
 - **2.4: Variantes no clasificadas y con ID en snp138NonFlagged  es clasificada como germinal**<br>
-snp138nonflagged: Si la variante tiene RSID, en la columna 
-snp138nonflagged ((flagged variants are those for which SNPs <1% MAF (or unknown), mapping only once to reference assembly, or flagged as “clinically associated”).)
+Si la variante tiene rsID, en la columna ***snp138nonflagged***, significa que es una variante conocida con MAF mayor a 1%. (Base de datos dbSNP). Estas son clasificadas como germinal.
+Ojo: flagged variants are those for which SNPs <1% MAF (or unknown), mapping only once to reference assembly, or flagged as “clinically associated”).
 Columnas en Excel<br>
 clasificación:"Germinal"<br>
 motivo:"snp138NonFlagged"<br>
 
 - **2.5: Variantes no clasificadas y con ID en avsnp150 y con AF en ExAC_nontcga_ALL es clasificada como variantes germina**l<br>
+
 Columnas en Excel<br>
 clasificacion: "Germinal"<br>
 motivo: "avsnp150_AND_ExAC_nontcga_ALL"<br>
