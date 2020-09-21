@@ -1,9 +1,28 @@
 # Filtro y clasificación de variantes [Datos Damasco]
 
-A partir de archivos VCFs, se realizó de variantes con ANNOVAR y CGI(Cancer )
+A partir de archivos VCFs, se realizó de variantes con ANNOVAR y CGI. 
 
+Para la anotación con ANNOVAR se utilizaron las sguientes bases de datos.
 
-## Filtro de variantes.
+-refGene
+-gnomad211_genome
+-gnomad211_exome
+-esp6500siv2_all
+-exac03nontcga
+-snp138NonFlagged
+-1000Genomas (2015)
+-dbnsfp35c
+-cadd13
+-avsnp150
+-cosmic92
+-clinvar_20200316
+
+Para mas información y descripción de las bases de datos visitar el siguiente [link]:(https://annovar.openbioinformatics.org/en/latest/user-guide/filter/)
+
+Reference
+Wang K, Li M, Hakonarson H. ANNOVAR: Functional annotation of genetic variants from next-generation sequencing data Nucleic Acids Research, 38:e164, 2010
+
+## 1. Filtro de variantes.
 
 ## 2. Clasificación de variantes
 
