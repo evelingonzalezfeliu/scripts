@@ -23,14 +23,15 @@ Wang K, Li M, Hakonarson H. ANNOVAR: Functional annotation of genetic variants f
 
 ## 1. Filtro inical de variantes.
 
-A partir de la uníon de todas las variantes por set de datos en Damasco, se eliminaron variantes basados en los siguientes criterios: 
-*Solo variantes tipo SNP con VAF (frecuecia alélica de la variante) mayor o igual a 0.05 (5%) y para InDels, se convervaron variantes con VAF mayor o igual a 0.07(7%). Estos filtros basados en los limites de deteccion validados por el panel OCA (Oncomine Focus Assay | Thermo Fisher Scientific). Para mayor información del panel [link](https://docs.google.com/presentation/d/1RMWfWdQEMmEO8QXOeL9V23UQObzv1bLDHuzy44ZFx88/edit?usp=sharing)
+A partir de la uníon de todas las variantes por set de datos en Damasco, se eliminaron variantes basados en los siguientes criterios: <br>
+- Solo variantes tipo SNP con VAF (frecuecia alélica de la variante) mayor o igual a 0.05 (5%) y e InDels con VAF mayor o igual a 0.07(7%). Estos filtros basados en los limites de detección validados por el panel OCA (Oncomine Focus Assay | Thermo Fisher Scientific). Para mayor información del panel [link](https://docs.google.com/presentation/d/1RMWfWdQEMmEO8QXOeL9V23UQObzv1bLDHuzy44ZFx88/edit?usp=sharing)
 
 ## 2. Clasificación de variantes
 
-### Filtro 2.2 variantes con VAF entre 0.60-1, son clasificadas como germinal. 
-clasificacion<-"Germinal"
-motivo<-"VAF_sobre_0.6"
+- **2.2 Filtro variantes con VAF entre 0.60-1, son clasificadas como germinal.**
+Columnas en Excel<br>
+clasificacion: "Germinal" <br>
+motivo: "VAF_sobre_0.6"<br>
 
 ### FILTRO 2.3: Variantes no clasificadas y con Cosmic ID son clasificadas como somáticas
 clasificacion<-"Somatica"
