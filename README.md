@@ -28,33 +28,39 @@ A partir de la uníon de todas las variantes por set de datos en Damasco, se eli
 
 ## 2. Clasificación de variantes
 
-- **2.2 Filtro variantes con VAF entre 0.60-1, son clasificadas como germinal.**
+- **2.2 Variantes con VAF mayor 0.60, son clasificadas como germinal.**<br>
 Columnas en Excel<br>
-clasificacion: "Germinal" <br>
+clasificacion: "Germinal"<br>
 motivo: "VAF_sobre_0.6"<br>
 
-### FILTRO 2.3: Variantes no clasificadas y con Cosmic ID son clasificadas como somáticas
-clasificacion<-"Somatica"
-motivo<-"CosmicID"
+- **2.3: Variantes no clasificadas y con Cosmic ID. Somática.**<br>
+Columnas en Excel<br>
+clasificación: "Somatica"<br>
+motivo: "CosmicID"<br>
 
-### FILTRO 2.4: Variantes no clasificadas y con ID en snp138NonFlagged  es clasificada como germinal
+- **2.4: Variantes no clasificadas y con ID en snp138NonFlagged  es clasificada como germinal**<br>
 snp138nonflagged: Si la variante tiene RSID, en la columna 
 snp138nonflagged ((flagged variants are those for which SNPs <1% MAF (or unknown), mapping only once to reference assembly, or flagged as “clinically associated”).)
-clasificacion<-"Germinal"
-motivo<-"snp138NonFlagged"
+Columnas en Excel<br>
+clasificación:"Germinal"<br>
+motivo:"snp138NonFlagged"<br>
 
-### FILTRO 2.5: Variantes no clasificadas y con ID en avsnp150 y con AF en ExAC_nontcga_ALL es clasificada como variantes germinal
-clasificacion<-"Germinal"
-motivo<-"avsnp150_AND_ExAC_nontcga_ALL"
+- **2.5: Variantes no clasificadas y con ID en avsnp150 y con AF en ExAC_nontcga_ALL es clasificada como variantes germina**l<br>
+Columnas en Excel<br>
+clasificacion: "Germinal"<br>
+motivo: "avsnp150_AND_ExAC_nontcga_ALL"<br>
 
-### FILTRO 2.6: Variantes no clasificadas y con ID en avsnp150, es clasificada como posible somatica
-clasificacion<-"Posible_Somatica"
-motivo<-"avsnp150"
+- **2.6: Variantes no clasificadas y con ID en avsnp150, es clasificada como posible somatica**<br>
+Columnas en Excel<br>
+clasificacion: "Posible_Somatica"<br>
+motivo: "avsnp150"<br>
 
-### FILTRO 2.7 Variantes con AF muy bajas en Bases de datos de frecuencias alélicas poblacionales, menor < 0.01, son clasificadas como posibles somáticas. 
-clasificacion<-"Posible_Somatica"
-motivo<-"sin_rsID_con_AFpob_menor_0.01"
+- **2.7: Variantes con AF muy bajas en Bases de datos de frecuencias alélicas poblacionales, menor < 0.01, son clasificadas como posibles somáticas.**<br>
+Columnas en Excel<br>
+clasificacion: "Posible_Somatica" <br>
+motivo: "sin_rsID_con_AFpob_menor_0.01" <br>
 
-### FILTRO 2.8: Aquellas variantes sin informacion en Bases de datos, son clasificadas como posibles variantes somáticas novel.
-clasificacion<-"Posible_Somatica_Novel"
-motivo<-"Sin_info_BDs"
+- **2.8: Aquellas variantes sin informacion en Bases de datos, son clasificadas como posibles variantes somáticas novel.**<br>
+Columnas en Excel<br>
+clasificación: "Posible_Somatica_Novel"<br>
+motivo: "Sin_info_BDs"<br>
