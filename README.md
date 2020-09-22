@@ -23,12 +23,14 @@ Wang K, Li M, Hakonarson H. ANNOVAR: Functional annotation of genetic variants f
 
 ## 1. Filtro inical de variantes.
 
-A partir de la uníon de todas las variantes por set de datos en Damasco, se eliminaron variantes basados en los siguientes criterios: <br>
-- Solo variantes tipo SNP con VAF (frecuecia alélica de la variante) mayor o igual a 0.05 (5%) y e InDels con VAF mayor o igual a 0.07(7%). Estos filtros basados en los limites de detección validados por el panel OCA (Oncomine Focus Assay | Thermo Fisher Scientific). Para mayor información del panel [link](https://docs.google.com/presentation/d/1RMWfWdQEMmEO8QXOeL9V23UQObzv1bLDHuzy44ZFx88/edit?usp=sharing)<br>
+A partir de la uníon de todas las variantes por set de datos en Damasco, se descartaron variantes basados en los siguientes criterios: <br>
+- Solo variantes tipo SNV con VAF (frecuecia alélica de la variante) mayor o igual a 0.05 (5%) y e InDels con VAF mayor o igual a 0.07(7%). Estos filtros basados en los limites de detección validados por el panel OCA (Oncomine Focus Assay | Thermo Fisher Scientific). Para mayor información del panel [link](https://docs.google.com/presentation/d/1RMWfWdQEMmEO8QXOeL9V23UQObzv1bLDHuzy44ZFx88/edit?usp=sharing)<br>
 
-- Solo variantes con AF menor o igual 0.01 (1%) en las bases de datos de frecuencias alelicas poblacionales (GnomAD genoma, GnomAD exomas, ESP6500, ExaAC y 1000Genomas). De esta manera eliminamos polimorfismos de los datos.
+- Solo variantes con AF menor o igual 0.01 (1%) reportadas en las bases de datos de frecuencias alelicas poblacionales (GnomAD-genoma, GnomAD-exomas, ESP6500, ExaAC y 1000Genomas). De esta manera eliminamos polimorfismos.
 
 ## 2. Clasificación de variantes
+
+
 
 - **2.1: Variantes encontradas en muestras de BC son clasificadas como variantes germinal**  
 Aquellas variantes que fueron encontradas en las muestras de sangre (BC), secuenciadas por el panel de TumorSec, son etiquetadas como variantes germinales si han sido encontradas en las muestras tumorales.<br>
@@ -74,7 +76,18 @@ clasificación: "Posible_Somatica" <br>
 motivo: "sin_rsID_con_AFpob_menor_0.01" <br>
 
 - **2.8: Variantes que aun no son clasificadas, son etiquetadas como posibles variantes somáticas novel.**<br>
-Aquellas variantes que no ha sido etiquetada en los pasos anteriores, es clasificada como posible variante somática novel. Debido a que no hay información de la variante en las bases de datos revisadas y tiene VAF mayor o igual a 0.6.<br>
+Aquellas variantes que no han sido etiquetada en los pasos anteriores, son clasificada como "posible somática novel".Esto, debido a que no hay información de la variante en las bases de datos revisadas y tiene VAF menor o igual a 0.6.<br>
 Columnas en Excel<br>
 clasificación: "Posible_Somatica_Novel"<br>
 motivo: "Sin_info_BDs"<br>
+
+## Columnas la anotación ANNOVAR/CGI
+
+### Columnas ANNOVAR
+
+### Columnas CGI
+
+
+
+
+
