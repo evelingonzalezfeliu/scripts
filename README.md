@@ -67,14 +67,13 @@ motivo: "avsnp150_AND_ExAC_nontcga_ALL"<br>
 
 - **2.6: Variantes no clasificadas y con rsID en avsnp150,son clasificadas como posible somática** <br>
 Aquellas variantes no clasificadas, que además tiene un rsID en la columna ***avsnp150*** es clasificada como posible somática. Esto debido a que es una variante que ya ha sido reportada, sin embargo, no hay indicios que sea germinal (ya que no se ha clasificado en los pasos anteriores).<br>
-Ojo: Existe la posibilidad que algunas de estas variantes, sean germinales. Debido a la baja representación de las poblaciones latinas en bases de  datos poblacionales. En caso de tener dudas, se puede realizar una revisión manual del rsID en la página de dbSNP y/o en CLINVAR. <br>
+Ojo: Existe la posibilidad que algunas de estas variantes, sean germinales. Debido a la baja representatividad de las poblaciones latinas en bases de  datos poblacionales. En caso de tener dudas, se puede realizar una revisión manual del rsID en la página de dbSNP y/o en CLINVAR. <br>
 Columnas en Excel<br>
 clasificación: "Posible_Somatica"<br>
 motivo: "avsnp150"<br>
 
 - **2.7: Variantes no clasificadas y con AF muy bajas (menor a 0.01) en bases de datos de frecuencias alélicas poblacionales, son clasificadas como posibles somáticas.**<br>
-Aquellas variantes que hasta el momento no han sido clasificadas y presentan AF poblacional en GnomAD, ExAC, ESP o/y 1000Genomas (entre 0-0.01), son clasificadas como posibles somáticas. 
-Ojo: Existe la posibilidad que algunas de estas variantes, sean germinales. Debido a la baja representación de las poblaciones latinas en bases de  datos poblacionales. En caso de tener dudas, se puede realizar una revisión manual del rsID en la página de dbSNP y/o en CLINVAR.<br>
+Aquellas variantes que hasta el momento no han sido clasificadas y presentan AF poblacional en GnomAD, ExAC, ESP o/y 1000Genomas (entre 0-0.01), son clasificadas como posibles somáticas.En caso de tener dudas, se puede realizar una revisión manual del rsID en la página de dbSNP y/o en CLINVAR.<br>
 Columnas en Excel<br>
 clasificación: "Posible_Somatica" <br>
 motivo: "sin_rsID_con_AFpob_menor_0.01" <br>
