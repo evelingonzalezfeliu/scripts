@@ -44,7 +44,7 @@ motivo:"variante_en_BC"<br>
 Aquellas variantes con un número mayor a 0.45 en la columna ***VAF*** del archivo Excel, son etiquetadas como germinal.<br>
 Columnas en Excel<br>
 clasificación: "Germinal"<br>
-motivo: "VAF_sobre_0.6"<br>
+motivo: "VAF_sobre_0.45"<br>
 
 - **2.3: Variantes no clasificadas y con Cosmic ID, son clasificadas como Somática.**<br>
 Aquellas variantes que hasta el momento no han sido clasificadas, y ademas tienen un ID en la columna ***cosmic92***, son clasificadas como somática. Estas ya han sido reportadas al menos una vez como variantes somáticas en la base de datos COSMIC [link](https://cancer.sanger.ac.uk/cosmic)<br>
