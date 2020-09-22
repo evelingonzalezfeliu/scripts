@@ -24,7 +24,7 @@ Wang K, Li M, Hakonarson H. ANNOVAR: Functional annotation of genetic variants f
 ## 1. Filtro inical de variantes.
 
 A partir de la unión de todas las variantes por set de datos en Damasco, se descartaron variantes basados en los siguientes criterios: <br>
-- Solo variantes tipo SNV con VAF (frecuecia alélica de la variante) mayor o igual a 0.05 (5%) y e InDels con VAF mayor o igual a 0.07(7%). Estos filtros basados en los limites de detección validados por el panel OCA (Oncomine Focus Assay | Thermo Fisher Scientific). Para mayor información del panel [link](https://docs.google.com/presentation/d/1RMWfWdQEMmEO8QXOeL9V23UQObzv1bLDHuzy44ZFx88/edit?usp=sharing)<br>
+- Solo variantes tipo SNV con VAF (frecuecia alélica de la variante) mayor o igual a 0.05 (5%) y e InDels con VAF mayor o igual a 0.07(7%). Estos filtros basados en los límites de detección validados por el panel OCA (Oncomine Focus Assay | Thermo Fisher Scientific). Para mayor información del panel [link](https://docs.google.com/presentation/d/1RMWfWdQEMmEO8QXOeL9V23UQObzv1bLDHuzy44ZFx88/edit?usp=sharing)<br>
 
 - Solo variantes con AF menor o igual 0.01 (1%) reportadas en las bases de datos de frecuencias alelicas poblacionales (GnomAD-genoma, GnomAD-exomas, ESP6500, ExaAC y 1000Genomas). De esta manera eliminamos polimorfismos.
 
@@ -60,27 +60,27 @@ clasificación:"Germinal"<br>
 motivo:"snp138NonFlagged"<br>
 
 - **2.5: Variantes no clasificadas y con ID en avsnp150 y con AF en ExAC_nontcga_ALL es clasificada como variantes germina**<br>
-Aquellas variantes que no fueron clasificadas en los pasos anteriores, que presentan rsID en la columna ***avsnp150*** y AF reportada en la columna ***ExAC_nontcga_ALL*** , son clasificadas como posible germinal. Esto quiere decir, que es una variante conocida que ha sido sido encontrada a bajas frecuencias alélicas en exomas de muestras de sangre (donde se excluyen las muestras con cancer (TCGA))<br>
+Aquellas variantes que no fueron clasificadas en los pasos anteriores, que presentan rsID en la columna ***avsnp150*** y AF reportada en la columna ***ExAC_nontcga_ALL*** , son clasificadas como posible germinal. Esto quiere decir, que es una variante conocida que ha sido sido encontrada a bajas frecuencias alélicas en exomas de muestras de sangre (donde se excluyen las muestras con cáncer (TCGA))<br>
 Columnas en Excel<br>
 clasificación: "Posible_Germinal"<br>
 motivo: "avsnp150_AND_ExAC_nontcga_ALL"<br>
 
-- **2.6: Variantes no clasificadas y con rsID en avsnp150,son clasificadas como posible somatica** <br>
-Aquellas variantes no clasificadas, que ademas tiene un rsID en la columna ***avsnp150*** es clasificada como posible somática. Esto debido a que es una variante que ya ha sido reportada, sin embargo, no hay indicios que sea germinal (ya que no se ha clasificado en los pasos anteriores).<br>
-Ojo: Existe la posibilidad que algunas de estas variantes, sean germinales. Debido a la baja representación de las poblaciones latinas en bases de  datos poblacionales. En caso de tener dudas, se puede realizar una revision manual del rsID en la página de dbSNP y/o en CLINVAR. <br>
+- **2.6: Variantes no clasificadas y con rsID en avsnp150,son clasificadas como posible somática** <br>
+Aquellas variantes no clasificadas, que además tiene un rsID en la columna ***avsnp150*** es clasificada como posible somática. Esto debido a que es una variante que ya ha sido reportada, sin embargo, no hay indicios que sea germinal (ya que no se ha clasificado en los pasos anteriores).<br>
+Ojo: Existe la posibilidad que algunas de estas variantes, sean germinales. Debido a la baja representación de las poblaciones latinas en bases de  datos poblacionales. En caso de tener dudas, se puede realizar una revisión manual del rsID en la página de dbSNP y/o en CLINVAR. <br>
 Columnas en Excel<br>
 clasificación: "Posible_Somatica"<br>
 motivo: "avsnp150"<br>
 
 - **2.7: Variantes no clasificadas y con AF muy bajas (menor a 0.01) en bases de datos de frecuencias alélicas poblacionales, son clasificadas como posibles somáticas.**<br>
 Aquellas variantes que hasta el momento no han sido clasificadas y presentan AF poblacional en GnomAD, ExAC, ESP o/y 1000Genomas (entre 0-0.01), son clasificadas como posibles somáticas. 
-Ojo: Existe la posibilidad que algunas de estas variantes, sean germinales. Debido a la baja representación de las poblaciones latinas en bases de  datos poblacionales. En caso de tener dudas, se puede realizar una revision manual del rsID en la página de dbSNP y/o en CLINVAR.<br>
+Ojo: Existe la posibilidad que algunas de estas variantes, sean germinales. Debido a la baja representación de las poblaciones latinas en bases de  datos poblacionales. En caso de tener dudas, se puede realizar una revisión manual del rsID en la página de dbSNP y/o en CLINVAR.<br>
 Columnas en Excel<br>
 clasificación: "Posible_Somatica" <br>
 motivo: "sin_rsID_con_AFpob_menor_0.01" <br>
 
-- **2.8: Variantes que aun no son clasificadas, son etiquetadas como posibles variantes somáticas novel.**<br>
-Aquellas variantes que no han sido etiquetada en los pasos anteriores, son clasificada como "posible somática novel". Esto, debido a que no hay información de la variante en las bases de datos revisadas y tiene VAF menor o igual a 0.45 <br>
+- **2.8: Variantes que aún no son clasificadas, son etiquetadas como posibles variantes somáticas novel.**<br>
+Aquellas variantes que no han sido etiquetadas, son clasificadas como "posible somática novel". Debido a que estas no tienen información en las bases de datos revisadas y ademas presentan VAF menor o igual a 0.45 <br>
 Columnas en Excel<br>
 clasificación: "Posible_Somatica_Novel"<br>
 motivo: "Sin_info_BDs"<br>
