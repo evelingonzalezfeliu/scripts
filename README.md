@@ -1,6 +1,6 @@
 # Filtro y clasificación de variantes [Datos Damasco]
 
-A partir de archivos VCFs del proyecto DAMASCO, se realizó la anotación de variantes con ANNOVAR y CGI, para todas las muestras por set(Colon_Cancer,Gallbladder_Cancer, Gastric_Cancer y Breast_Cancer).
+A partir de archivos VCFs del proyecto DAMASCO, se realizó la anotación de variantes con ANNOVAR y CGI para todas las muestras, divididas por set (Colon_Cancer,Gallbladder_Cancer, Gastric_Cancer y Breast_Cancer).
 
 Para la anotación con ANNOVAR se utilizaron las siguientes bases de datos.
 - refGene
