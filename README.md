@@ -53,7 +53,7 @@ clasificación: "Somatica"<br>
 motivo: "CosmicID"<br>
 
 - **2.4: Variantes no clasificadas y con ID en snp138NonFlagged son clasificadas como germinal**<br>
-Si la variante tiene rsID, en la columna ***snp138nonflagged***, significa que es una variante conocida con MAF mayor a 1%. (Base de datos dbSNP). Aquellas variantes que no fueron clasificadas en los pasos anteriores y con rsID en ***snp138nonflagged*** son clasificadas como germinal.<b>
+Si la variante tiene rsID, en la columna ***snp138nonflagged***, significa que es una variante conocida con MAF mayor a 1%. (Base de datos dbSNP). Aquellas variantes que no fueron clasificadas en los pasos anteriores y con rsID en ***snp138nonflagged*** son clasificadas como germinal.
 Ojo: flagged variants are those for which SNPs <1% MAF (or unknown), mapping only once to reference assembly, or flagged as “clinically associated”).<br>
 Columnas en Excel<br>
 clasificación:"Germinal"<br>
