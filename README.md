@@ -40,30 +40,29 @@ Columnas en Excel<br>
 clasificación: "Germinal"<br>
 motivo:"variante_en_BC"<br>
 
-- **2.2 Variantes con VAF mayor 0.45, son clasificadas como germinal.**<br>
-Aquellas variantes con un número mayor a 0.45 en la columna ***VAF*** del archivo Excel, son etiquetadas como germinal.<br>
-Columnas en Excel<br>
-clasificación: "Germinal"<br>
-motivo: "VAF_sobre_0.45"<br>
-
-- **2.3: Variantes no clasificadas y con Cosmic ID, son clasificadas como Somática.**<br>
+- **2.2: Variantes no clasificadas y con Cosmic ID, son clasificadas como Somática.**<br>
 Aquellas variantes que hasta el momento no han sido clasificadas, y ademas tienen un ID en la columna ***cosmic92***, son clasificadas como somática. Estas ya han sido reportadas al menos una vez como variantes somáticas en la base de datos COSMIC [link](https://cancer.sanger.ac.uk/cosmic)<br>
 Columnas en Excel<br>
 clasificación: "Somatica"<br>
 motivo: "CosmicID"<br>
 
-- **2.4: Variantes no clasificadas y con ID en snp138NonFlagged son clasificadas como germinal**<br>
+- **2.3: Variantes no clasificadas y con ID en snp138NonFlagged son clasificadas como germinal**<br>
 Si la variante tiene rsID, en la columna ***snp138nonflagged***, significa que es una variante conocida con MAF mayor a 1%. (Base de datos dbSNP). Aquellas variantes que no fueron clasificadas en los pasos anteriores y con rsID en ***snp138nonflagged*** son clasificadas como germinal.
 Ojo: flagged variants are those for which SNPs <1% MAF (or unknown), mapping only once to reference assembly, or flagged as “clinically associated”).<br>
 Columnas en Excel<br>
 clasificación:"Germinal"<br>
 motivo:"snp138NonFlagged"<br>
 
-- **2.5: Variantes no clasificadas y con ID en avsnp150 y con AF en ExAC_nontcga_ALL es clasificada como variantes germina**<br>
-Aquellas variantes que no fueron clasificadas en los pasos anteriores, que presentan rsID en la columna ***avsnp150*** y AF reportada en la columna ***ExAC_nontcga_ALL*** , son clasificadas como posible germinal. Esto quiere decir, que es una variante conocida que ha sido sido encontrada a bajas frecuencias alélicas en exomas de muestras de sangre (donde se excluyen las muestras con cáncer (TCGA))<br>
+- **2.4: Variantes no clasificadas y con ID en avsnp150 y con AF en ExAC_nontcga_ALL son clasificadas como germinal**<br>
+Aquellas variantes que no fueron clasificadas en los pasos anteriores, que presentan rsID en la columna ***avsnp150*** y AF reportada en la columna ***ExAC_nontcga_ALL*** ,son clasificadas como posible germinal. Esto quiere decir, que es una variante conocida que ha sido sido encontrada a bajas frecuencias alélicas en exomas de muestras de sangre (donde se excluyen las muestras con cáncer (TCGA))<br>
 Columnas en Excel<br>
 clasificación: "Posible_Germinal"<br>
 motivo: "avsnp150_AND_ExAC_nontcga_ALL"<br>
+
+- **2.5 Variantes no clasificadas y con etiqueta Benign/Likely_benign en CLINVAR, son clasificadas como germinal**<br> 
+Columnas en Excel<br>
+clasificación: "Posible_Germinal"<br>
+motivo: "CLINVAR_Benign"<br>
 
 - **2.6: Variantes no clasificadas y con rsID en avsnp150,son clasificadas como posible somática** <br>
 Aquellas variantes no clasificadas, que además tiene un rsID en la columna ***avsnp150*** es clasificada como posible somática. Esto debido a que es una variante que ya ha sido reportada, sin embargo, no hay indicios que sea germinal (ya que no se ha clasificado en los pasos anteriores).<br>
@@ -78,8 +77,14 @@ Columnas en Excel<br>
 clasificación: "Posible_Somatica" <br>
 motivo: "sin_rsID_con_AFpob_menor_0.01" <br>
 
-- **2.8: Variantes que aún no son clasificadas, son etiquetadas como posibles variantes somáticas novel.**<br>
-Aquellas variantes que no han sido etiquetadas, son clasificadas como "posible somática novel". Debido a que estas no tienen información en las bases de datos revisadas y ademas presentan VAF menor o igual a 0.45 <br>
+- **2.8 Variantes con VAF mayor 0.60, son clasificadas como germinal.**<br>
+Aquellas variantes con un número mayor a 0.60 en la columna ***VAF*** del archivo Excel, son etiquetadas como posible germinal.<br>
+Columnas en Excel<br>
+clasificación: "Posible Germinal"<br>
+motivo: "VAF_sobre_0.60"<br>
+
+- **2.9: Variantes que aún no son clasificadas, son etiquetadas como posibles variantes somáticas novel.**<br>
+Aquellas variantes que no han sido etiquetadas, son clasificadas como "posible somática novel". Debido a que estas no tienen información en las bases de datos revisadas y ademas presentan VAF menor o igual a 0.60 <br>
 Columnas en Excel<br>
 clasificación: "Posible_Somatica_Novel"<br>
 motivo: "Sin_info_BDs"<br>
