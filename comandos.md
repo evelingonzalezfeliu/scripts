@@ -11,3 +11,7 @@ Ejecutar ANNOVAR
 		-operation g,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f \
 		-nastring . -vcfinput
  
+
+sudo java -jar /opt/picard.jar CreateSequenceDictionary REFERENCE=hg38.fa OUTPUT=hg38.fa.dict
+
+sudo samtools faidx hg38.fa
